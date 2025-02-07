@@ -1,0 +1,114 @@
+section.show_tasks {
+  flex-grow: 1;
+  height: 100%;
+}
+
+div.scrollable {
+  height: 530px;
+  overflow-y: scroll;
+}
+
+div.show_tasks_title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+div.show_tasks_title > h2 {
+  font-size: 40px;
+  color: #212323;
+}
+
+div.show_tasks_title div {
+  text-align: center;
+  background-color: #ececec;
+  padding: 6px 15px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+div.add_task {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #9c9c9c;
+  padding: 10px 0;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  background-color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+
+div.add_task:hover {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+div.task_item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+  cursor: pointer;
+}
+
+div.task_item:hover {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+div.task_item > div.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.task_item > div.title > span {
+  font-size: 20px;
+  color: #212323;
+  flex-grow: 1;
+}
+
+div.task_item > div.description {
+  width: 90%;
+  padding: 0 40px;
+  font-size: 14px;
+  color: rgb(120, 120, 120);
+}
+
+div.task_item > div.informations {
+  position: relative;
+  display: flex;
+  gap: 100px;
+}
+
+div.task_item > div.informations > div.list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  font-size: 14px;
+  color: #212323e6;
+}
+
+div.task_item > div.informations > div.list > div.color {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+div.task_item > div.informations > div.tags {
+  position: absolute;
+  left: 200px;
+  display: flex;
+  gap: 10px;
+}
+
+div.task_item > div.informations > div.tags > div {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}

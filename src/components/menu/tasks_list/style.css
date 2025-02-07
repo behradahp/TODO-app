@@ -1,0 +1,43 @@
+div.tasks_list {
+  margin-top: 30px;
+}
+
+div.tasks_list h3 {
+  font-size: 12px;
+  color: #525252;
+}
+
+div.tasks_list_item {
+  padding: 10px 3px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.tasks_list_item:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+div.tasks_list_item_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.tasks_list_item_title > span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #525252;
+}
+
+div.tasks_list_item_count > div {
+  width: 25px;
+  text-align: center;
+  background-color: #ececec;
+  color: #525252;
+  font-weight: 900;
+  border-radius: 5px;
+}

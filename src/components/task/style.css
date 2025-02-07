@@ -1,0 +1,155 @@
+section.task {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 14px 24px;
+  transition: all 0.5s;
+}
+
+section.task > h2 {
+  font-size: 22px;
+  color: #525252;
+}
+
+div.inputs {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div.inputs > textarea {
+  min-height: 50px;
+}
+div.inputs > input,
+textarea {
+  font-size: 16px;
+  padding: 5px;
+  background-color: inherit;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+div.info {
+  margin-top: 100px;
+  display: flex;
+  gap: 90px;
+}
+
+div.info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+div.keys > span {
+  font-size: 16px;
+  color: #686868;
+}
+
+div.category_selection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #686868;
+}
+
+div.category_selection > img {
+  transform: rotate(90deg);
+}
+
+div.category_selection > div.categories {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  z-index: 100;
+}
+
+div.category_selection > div.categories > span {
+  padding: 5px;
+  border-radius: 5px;
+}
+div.category_selection > div.categories > span:hover {
+  background-color: rgb(204, 204, 204);
+}
+
+div.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+div.tags > div.tag_item {
+  padding: 3px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+div.tags > div.add_tag {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 3px 10px;
+  text-align: center;
+  color: #525252;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #eaeaea;
+}
+
+div.tags_selection {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  z-index: 100;
+}
+
+div.tags_selection > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.tags_selection > div > div {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+div.buttons {
+  flex-grow: 2;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+div.buttons button {
+  border: none;
+  background-color: inherit;
+  border-radius: 5px;
+  padding: 5px 0;
+}
